@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <meta name="authors" content="Yazmín Alejandra Rodriguez">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./assets/css/calculadora.css" type="text/css">
+</head>
+
+<body>
+    
+    <main class="principal">
+        <div id="contentedor_grid" class="contenedor">
+            <div class="area">1</div>
+            <div class="area">2</div>
+            <div class="area">3</div>
+            <div class="area">4</div>
+            <div class="area">5</div>
+            <div class="area">6</div>
+            <div class="area">7</div>
+            <div class="area">8</div>
+            <div class="area">9</div>
+            <div class="area"></div>
+            <div class="area"></div>
+            <div class="area">0</div>
+        </div>
+        
+        <div class="row">
+            <div class="dos-columnas left aling-rigth">
+                <input id="num1" type="number" placeholder="0">
+                <label>Seleccione o digite número 1</label>
+            </div>
+            <div class="dos-columnas left aling-left">
+                <input id="num2" type="number" placeholder="0">
+                <label>Seleccione o digite número 2</label>
+            </div>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <button id="sumar" class="button-redondo">SUMAR</button>
+                </li>
+                <li>
+                    <button id="restar" class="button-redondo">RESTAR</button>
+                </li>
+                <li>
+                    <button id="multiplicar" class="button-redondo">MULTIPLICAR</button>
+                </li>
+                <li>
+                    <button id="dividir" class="button-redondo">DIVIDIR</button>
+                </li>
+                <li>
+                    <a style="color: black" href="./index.html">Volver</a>
+                </li>
+            </ul>
+        </div>
+        
+        <h3 id="respuesta"></h3>
+       
+    </main>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/calculadora.js"></script> <!--Conectamos la hoja de estilos-->
+</body>
+</html>
